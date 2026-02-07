@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+mediapipe
+python-multipart>=0.0.22
+pydantic
+sqlalchemy
+langchain
+langchain-community
+langchain-core

@@ -1,2 +1,4 @@
 .env
 .idea
+data/r_*.csv
+data/summary.csv

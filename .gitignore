@@ -2,3 +2,9 @@
 .idea
 data/r_*.csv
 data/summary.csv
+pre_processing/processed/r_*_processed.csv
+pre_processing/extracted/r_*_weld_aligned.csv
+pre_processing/aligned/merged_by_distance.csv
+pre_processing/aligned/merged_by_distance_corrected.csv
+pre_processing/corrected/drift_corrected.csv
+pre_processing/corrected/*.png

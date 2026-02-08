@@ -118,7 +118,24 @@ def main():
     
     # Add run_id column set to 0
     result_df['run_id'] = 0
-    
+
+    # Drop requested columns from final output (ignore if missing)
+    columns_to_drop = [
+        "r_2007_weld_aligned__distance",
+        "r_2015_weld_aligned__distance",
+        "distance__delta",
+        "thickness__avg",
+        "thickness__delta",
+        "thickness___delta",
+        "jlength__avg",
+        "jlength__delta",
+        "jlength___delta",
+        "distance_2022",
+        "distance_2022_corrected",
+        "thickness_2022",
+    ]
+    result_df = result_df.drop(columns=columns_to_drop, errors="ignore")
+    result_df["type"] = "weld"
     # Save output
     result_df.to_csv(OUTPUT_FILE, index=False)
     print(f"\nSaved corrected data to {OUTPUT_FILE}")

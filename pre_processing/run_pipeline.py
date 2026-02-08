@@ -32,6 +32,7 @@ def main():
         ("extract.py", "Extract weld events from r_2007, r_2015, r_2022"),
         ("align.py", "Merge and align welds by distance with drift correction"),
         ("apply_drift_correction.py", "Apply drift correction to distance columns"),
+        ("normalize_names.py", "Normalize columns across runs"),
     ]
     
     for script, description in steps:
